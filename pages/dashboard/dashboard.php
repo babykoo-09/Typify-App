@@ -1,14 +1,15 @@
-<?php include '../../includes/header.php'; ?>
-<?php include '../../includes/navbar.php'; ?>
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Dashboard loaded");
 
-<div class="container fade-in">
-    <div class="topbar">
-        <h1>Dashboard</h1>
-    </div>
+    const cards = document.querySelectorAll(".card");
 
-    <div class="card">
-        <p>Dashboard content template.</p>
-    </div>
-</div>
+    cards.forEach((card) => {
+        card.addEventListener("mouseover", () => {
+            card.style.transform = "scale(1.02)";
+        });
 
-<?php include '../../includes/footer.php'; ?>
+        card.addEventListener("mouseout", () => {
+            card.style.transform = "scale(1)";
+        });
+    });
+});
