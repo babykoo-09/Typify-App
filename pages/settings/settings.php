@@ -5,6 +5,7 @@
         <h1 style="text-align: center; margin-bottom: 25px;">Setting</h1>
         
         <div class="setting-menu">
+            <a href="../profile/account.php" class="menu-item">Account</a>
             <a href="privacy.php" class="menu-item">Private ></a>
             <a href="language.php" class="menu-item">Language ></a>
             <a href="theme.php" class="menu-item">Theme Mode ></a>
